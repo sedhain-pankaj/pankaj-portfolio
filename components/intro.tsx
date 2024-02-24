@@ -56,7 +56,7 @@ export default function Intro() {
         <span className="font-bold">3+ years</span> of experience in
         programming. I enjoy building{" "}
         <span className="italic">websites & mobile apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React (NextJS)</span>.
       </motion.h1>
 
       <motion.div
