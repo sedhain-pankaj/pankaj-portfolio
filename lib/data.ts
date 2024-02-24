@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import jukebox from "@/public/jukebox.jpg";
+import plumber from "@/public/plumber.jpg";
+import dashboard from "@/public/dashboard.jpg";
 
 export const links = [
   {
@@ -62,25 +62,42 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "JukeBox",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    // imageUrl: corpcommentImg,
+      "A kiosk that allowed users to queue songs from locally stored category or YouTube, and an admin panel to manage these songs.",
+    tags: [
+      "PHP/ Apache",
+      "JS",
+      "SCSS",
+      "Batch",
+      "jQuery/ UI",
+      "FFMpeg",
+      "YouTube v3 API",
+      "MediaElementJS",
+    ],
+    imageUrl: jukebox,
+  },
+
+  {
+    title: "Dashboard",
+    description:
+      "A financial dashboard with homepage, login page and invoice page with search, sort, pagination & CRUD of invoices.",
+    tags: ["React", "NextJS 14", "SQL", "Tailwind CSS", "Framer Motion"],
+    imageUrl: dashboard,
   },
   {
-    title: "rmtDev",
+    title: "Plumbing",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    // imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl: wordanalyticsImg,
+      "A mobile and website app for a plumber to record jobs, store photos, and send PDFs to clients. It uses jotform for the admin panel.",
+    tags: [
+      "Responsive Web App",
+      "Mobile App",
+      "Analytics",
+      "Conditional Forms",
+      "Onedrive Integration",
+      "JotForm",
+    ],
+    imageUrl: plumber,
   },
 ] as const;
 
