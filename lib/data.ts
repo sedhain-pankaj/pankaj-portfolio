@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import jukebox from "@/public/jukebox.jpg";
 import plumber from "@/public/plumber.jpg";
 import dashboard from "@/public/dashboard.jpg";
+import { GrWorkshop } from "react-icons/gr";
+import { MdWorkOutline } from "react-icons/md";
+import { PiStudentDuotone } from "react-icons/pi";
 
 export const links = [
   {
@@ -30,33 +30,6 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
-  },
-] as const;
-
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
   },
 ] as const;
 
@@ -116,4 +89,39 @@ export const skillsData = [
   "phpMyAdmin",
   "Python",
   "Framer Motion",
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Software Developer (Intern)",
+    location: "Vetcheck",
+    description:
+      "Testing UI from dev-branch before merging to live-branch. Creating forms, handouts and help resources in PHP using Laravel blade templates.",
+    icon: React.createElement(GrWorkshop),
+    date: "Jan - Apr 2024",
+  },
+  {
+    title: "ICT Professional Year Program by ACS",
+    location: "Monash College",
+    description:
+      "A 44-week program to gain professional experience in the Australian IT industry. It includes a 12-week internship, 13-week online mentorship in IT skills development journey, and 32-week classroom-based work-readiness training.",
+    icon: React.createElement(PiStudentDuotone),
+    date: "2023",
+  },
+  {
+    title: "Full-stack Developer (Contract)",
+    location: "Craig Williams Promotions",
+    description:
+      "Built a kiosk-based jukebox app using JavaScript and PHP, modernized legacy code, designed intuitive UI, integrated YouTube API, and developed an auto-updating admin panel in collaboration with business owners.",
+    icon: React.createElement(MdWorkOutline),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Bachelor of Information Technology",
+    location: "Southern Cross University",
+    description:
+      "Graduated with a GPA of 6.08 / 7.00 with majors in Software Development. Final year project of a movie search portal for rental store written in PHP using MVC design and phpMyAdmin where a customer can search for movies based on genre, title or actor.",
+    icon: React.createElement(PiStudentDuotone),
+    date: "2017 - 2020",
+  },
 ] as const;
