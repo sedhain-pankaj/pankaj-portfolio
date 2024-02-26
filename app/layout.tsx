@@ -29,14 +29,14 @@ export default function RootLayout({
           <div className="bg-[#dfdbfb] fixed top-[-1rem] -z-10 left-[-35rem] h-[35rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
         </div>
 
-        <ActiveSectionContentProvider>
-          <ThemeContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContentProvider>
             <Header />
             {children}
             <Footer />
             <ThemeSwitch />
-          </ThemeContextProvider>
-        </ActiveSectionContentProvider>
+          </ActiveSectionContentProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
