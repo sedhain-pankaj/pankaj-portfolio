@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.35);
   const { theme } = useTheme();
 
   const ref2 = useRef<HTMLDivElement>(null);
