@@ -98,19 +98,21 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-blue-800 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-[#0077B5] text-white dark:bg-white/80 dark:text-[#0077B5] py-3 px-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
           href="https://www.linkedin.com/in/pankaj-sedhain/"
           target="_blank"
         >
           <BsLinkedin />
+          LinkedIn
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-black/90 text-white dark:bg-white/20 dark:text-black py-3 px-6 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
           href="https://github.com/sedhain-pankaj"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithubSquare className="text-[1.35rem]" />
+          GitHub
         </a>
       </motion.div>
     </section>
