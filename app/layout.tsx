@@ -7,7 +7,8 @@ import Footer from "@/components/footer";
 import ThemeContextProvider from "@/context/theme-context";
 import ThemeSwitch from "@/components/theme-switch";
 import { Toaster } from "react-hot-toast";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             <ThemeSwitch />
             <Toaster />
             <Analytics />
+            <SpeedInsights />
           </ActiveSectionContentProvider>
         </ThemeContextProvider>
       </body>
