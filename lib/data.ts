@@ -5,6 +5,7 @@ import dashboard from "@/public/dashboard.jpg";
 import { GrWorkshop } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
 import { PiStudentDuotone } from "react-icons/pi";
+import { GiBookCover } from "react-icons/gi";
 
 export const links = [
   {
@@ -26,6 +27,10 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -98,15 +103,7 @@ export const experiencesData = [
     description:
       "Testing UI from dev-branch before merging to live-branch. Creating forms, handouts and help resources in PHP using Laravel blade templates.",
     icon: React.createElement(GrWorkshop),
-    date: "Jan - Apr 2024",
-  },
-  {
-    title: "ICT Professional Year Program by ACS",
-    location: "Monash College",
-    description:
-      "A 44-week program to gain professional experience in the Australian IT industry. It includes a 12-week internship, 13-week online mentorship in IT skills development journey, and 32-week classroom-based work-readiness training.",
-    icon: React.createElement(PiStudentDuotone),
-    date: "2023",
+    date: "2024",
   },
   {
     title: "Full-stack Developer (Contract)",
@@ -116,6 +113,17 @@ export const experiencesData = [
     icon: React.createElement(MdWorkOutline),
     date: "2021 - 2022",
   },
+];
+
+export const educationData = [
+  {
+    title: "ICT Professional Year Program by ACS",
+    location: "Monash College",
+    description:
+      "A 44-week program to gain professional experience in the Australian IT industry. It includes a 12-week internship, 13-week online mentorship in IT skills development journey, and 32-week classroom-based work-readiness training.",
+    icon: React.createElement(GiBookCover),
+    date: "2023",
+  },
   {
     title: "Bachelor of Information Technology",
     location: "Southern Cross University",
@@ -124,4 +132,4 @@ export const experiencesData = [
     icon: React.createElement(PiStudentDuotone),
     date: "2017 - 2020",
   },
-] as const;
+];
