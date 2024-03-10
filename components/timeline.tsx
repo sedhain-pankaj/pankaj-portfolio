@@ -35,7 +35,7 @@ const TimelineTree: React.FC<TimelineTreeProps> = ({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <section id={sectionId} ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id={sectionId.toLowerCase()} ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>{sectionTitle}</SectionHeading>
       <motion.div
         ref={ref2}
