@@ -35,7 +35,11 @@ const TimelineTree: React.FC<TimelineTreeProps> = ({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <section id={sectionId.toLowerCase()} ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section
+      id={sectionId.toLowerCase()}
+      ref={ref}
+      className="scroll-mt-28 mb-28 sm:mb-40"
+    >
       <SectionHeading>{sectionTitle}</SectionHeading>
       <motion.div
         ref={ref2}
@@ -76,7 +80,22 @@ const TimelineTree: React.FC<TimelineTreeProps> = ({
                 </h3>
                 <p className="font-normal !mt-1 underline">{item.location}</p>
                 <p className="!mt-2 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
+                  {item.description.split("•").map((item, key) => {
+                    const urlRegex = /(https?:\/\/[^\s]+)/g;
+                    const itemWithLinks = item.replace(
+                      urlRegex,
+                      (url) =>
+                        `<a href="${url}" target="_blank" rel="noopener noreferrer" class="underline">${url}</a>`
+                    );
+                    return (
+                      <span
+                        key={key}
+                        dangerouslySetInnerHTML={{
+                          __html: item ? `•${itemWithLinks}<br /><br />` : "",
+                        }}
+                      />
+                    );
+                  })}
                 </p>
               </VerticalTimelineElement>
             </React.Fragment>
