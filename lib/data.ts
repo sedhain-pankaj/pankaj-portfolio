@@ -101,7 +101,7 @@ export const experiencesData = [
     title: "Software Developer (Intern)",
     location: "Vetcheck",
     description:
-      "Testing UI from dev-branch before merging to live-branch. Creating forms, handouts and help resources in PHP using Laravel blade templates.",
+      "• Testing UI from dev-branch before merging to live-branch. • Creating forms, handouts and help resources in PHP using Laravel blade templates. • Creating Python scripts to extract Veterinary clinics details from online sites and compile them into CSV file • https://github.com/sedhain-pankaj/RCVS ",
     icon: React.createElement(GrWorkshop),
     date: "2024",
   },
@@ -109,7 +109,7 @@ export const experiencesData = [
     title: "Full-stack Developer (Contract)",
     location: "Craig Williams Promotions",
     description:
-      "Built a kiosk-based jukebox app using JavaScript and PHP, modernized legacy code, designed intuitive UI, integrated YouTube API, and developed an auto-updating admin panel in collaboration with business owners.",
+      "• Created an in-house kiosk-based jukebox application written in PHP (backend) and JavaScript (frontend). • Updated old code bases to modern development standards, improving functionality. • Designed intuitive graphical user interfaces to improve user experience. • Added internet functionality in order to incorporate YouTube videos within the jukebox. • Co-ordinated with business owners to develop an admin panel that can automatically sort files and update the jukebox database without human intervention. • https://github.com/sedhain-pankaj/Craigs-Music-Player",
     icon: React.createElement(MdWorkOutline),
     date: "2021 - 2022",
   },
@@ -120,7 +120,7 @@ export const educationData = [
     title: "ICT Professional Year Program by ACS",
     location: "Monash College",
     description:
-      "A 44-week program to gain professional experience in the Australian IT industry. It includes a 12-week internship, 13-week online mentorship in IT skills development journey, and 32-week classroom-based work-readiness training.",
+      "• A 44-week program to gain professional experience in the Australian IT industry. • It includes a 12-week internship, 13-week online mentorship in IT skills development journey, and 32-week classroom-based work-readiness training.",
     icon: React.createElement(GiBookCover),
     date: "2023",
   },
@@ -128,7 +128,7 @@ export const educationData = [
     title: "Bachelor of Information Technology",
     location: "Southern Cross University",
     description:
-      "Graduated with a GPA of 6.08 / 7.00 with majors in Software Development. Final year project of a movie search portal for rental store written in PHP using MVC design and phpMyAdmin where a customer can search for movies based on genre, title or actor.",
+      "• Graduated with a GPA of 6.08 / 7.00 with majors in Software Development. • Final year project of a movie search portal for rental store written in PHP using MVC design and phpMyAdmin where a customer can search for movies based on genre, title or actor.",
     icon: React.createElement(PiStudentDuotone),
     date: "2017 - 2020",
   },
